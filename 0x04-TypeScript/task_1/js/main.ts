@@ -31,8 +31,7 @@ const director: Director = {
 };
 
 interface printTeacherFuntion {
-    firstName: string;
-    lastName: string;
+    (firstName:string, lastName:string): string;
 }
 
 
