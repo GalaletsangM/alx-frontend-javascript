@@ -19,4 +19,5 @@ var director = {
 var printTeacher = function (firstName, lastName) {
     return "".concat(firstName, " ").concat(lastName);
 };
+printTeacher("Precious", "Mafoko");
 console.log(printTeacher("Precious", "Mafoko"));
