@@ -6,8 +6,7 @@ interface Teacher {
     location: string;
     [key: string]: any;
 }
-
-interface Directors extends Teacher {
+interface Director extends Teacher {
     numberOfReports: number;
 }
 
@@ -20,7 +19,7 @@ const teacher: Teacher = {
     occupation: "Engineer"
 }
 
-const director: Directors = {
+const director: Director = {
     firstName: "Bruce",
     lastName: "Wuttor",
     fullTimeEmployee: true,
