@@ -4,8 +4,9 @@ var teacher = {
     fullTimeEmployee: true,
     yearsOfExperience: 16,
     location: "South Africa",
-    occupation: "Engineer"
+    occupation: "Engineer",
 };
+console.log(teacher);
 var director = {
     firstName: "Bruce",
     lastName: "Wuttor",
@@ -13,6 +14,9 @@ var director = {
     yearsOfExperience: 5,
     location: "Ghana",
     occupation: "Director",
-    numberOfReports: 3
+    numberOfReports: 3,
 };
-console.log(teacher);
+var printTeacher = function (firstName, lastName) {
+    return "".concat(firstName, " ").concat(lastName);
+};
+console.log(printTeacher("Precious", "Mafoko"));

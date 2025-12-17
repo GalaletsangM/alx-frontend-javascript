@@ -6,27 +6,36 @@ interface Teacher {
     location: string;
     [key: string]: any;
 }
+
+const teacher: Teacher = {
+  firstName: "Abel",
+  lastName: "Smith",
+  fullTimeEmployee: true,
+  yearsOfExperience: 16,
+  location: "South Africa",
+  occupation: "Engineer",
+};
+console.log(teacher);
 interface Director extends Teacher {
     numberOfReports: number;
 }
 
-const teacher: Teacher = {
-    firstName: "Abel",
-    lastName: "Smith",
-    fullTimeEmployee: true,
-    yearsOfExperience: 16,
-    location: "South Africa",
-    occupation: "Engineer"
-}
-
 const director: Director = {
-    firstName: "Bruce",
-    lastName: "Wuttor",
-    fullTimeEmployee: true,
-    yearsOfExperience: 5,
-    location: "Ghana",
-    occupation: "Director",
-    numberOfReports: 3
+  firstName: "Bruce",
+  lastName: "Wuttor",
+  fullTimeEmployee: true,
+  yearsOfExperience: 5,
+  location: "Ghana",
+  occupation: "Director",
+  numberOfReports: 3,
+};
+
+interface PrintTeacherFuntion {
+    (firstName: string, lastName:string): string;
 }
 
-console.log(teacher);
+const printTeacher: PrintTeacherFuntion = (firstName, lastName) => {
+    return `${firstName} ${lastName}`
+}
+console.log(printTeacher("Precious", "Mafoko"));
+
