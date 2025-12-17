@@ -30,7 +30,7 @@ const director: Director = {
   numberOfReports: 3,
 };
 
-interface printTeacherFuntion {
+interface printTeacherFunction {
     (firstName:string, lastName:string): string;
 }
 
