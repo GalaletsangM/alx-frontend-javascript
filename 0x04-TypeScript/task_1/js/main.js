@@ -16,5 +16,8 @@ var director = {
     occupation: "Director",
     numberOfReports: 3,
 };
-//printTeacher("Precious", "Mafoko")
+var printTeacher = function (firstName, lastName) {
+    return "".concat(firstName, ". ").concat(lastName);
+};
+printTeacher("Precious", "Mafoko");
 //console.log(printTeacher("Precious", "Mafoko"));

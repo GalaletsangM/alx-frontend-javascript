@@ -34,7 +34,10 @@ interface printTeacherFunction {
     (firstName:string, lastName:string): string;
 }
 
+const printTeacher: printTeacherFunction = (firstName, lastName) => {
+    return `${firstName}. ${lastName}`;
+}
 
-//printTeacher("Precious", "Mafoko")
+printTeacher("Precious", "Mafoko");
 //console.log(printTeacher("Precious", "Mafoko"));
 
