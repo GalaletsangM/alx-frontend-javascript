@@ -31,12 +31,11 @@ const director: Director = {
 };
 
 interface PrintTeacherFuntion {
-    (firstName: string, lastName:string): string;
+    firstName: string;
+    lastName: string;
 }
 
-const printTeacher: PrintTeacherFuntion = (firstName, lastName) => {
-    return `${firstName} ${lastName}`
-}
-printTeacher("Precious", "Mafoko")
-console.log(printTeacher("Precious", "Mafoko"));
+
+//printTeacher("Precious", "Mafoko")
+//console.log(printTeacher("Precious", "Mafoko"));
 
