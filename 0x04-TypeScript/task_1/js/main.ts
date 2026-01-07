@@ -42,3 +42,9 @@ function printTeacher({ firstName, lastName }:{firstName:string, lastName:string
 printTeacher({firstName:"Precious", lastName:"Mafoko"});
 //console.log(printTeacher("Precious", "Mafoko"));
 
+class StudentClass {
+    firstName: string;
+    lastName: string;
+
+    constructor 
+}
